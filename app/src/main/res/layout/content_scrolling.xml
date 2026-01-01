@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/srushti" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Instructions"
+                    android:fontFamily="@font/avengers"
+                    android:textColor="#CA3A1D"
+                    android:textSize="50dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_marginVertical="10dp">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="The infinity stones are kept in a sophisticated safe. To retrieve them, they all must be taken at once, and the sensors placed throughout the safe must not be disturbed."
+                        android:textColor="#CCCCCC"
+                        android:textSize="20dp"
+                        android:padding="20dp" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Goal: to discover the empty boxes while avoiding the infinity stones and sensors"
+                        android:textColor="#CCCCCC"
+                        android:textSize="20dp"
+                        android:padding="20dp" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="• Click on a closed tile to reveal it. \n\n• Each number indicates the number of  stones or sensors touching the tile."
+                        android:textColor="#CCCCCC"
+                        android:textSize="20dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="30dp"
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:src="@drawable/example"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="• To shield a stone or sensor, click on the shield and then click on the tile to be shielded. \n\n• Shield all stones and sensors to win!\n\n• You lose if you click on a stone or sensor without shielding it!"
+                        android:textColor="#CCCCCC"
+                        android:textSize="20dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="30dp"
+                        />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Special Tiles"
+                        android:fontFamily="@font/avengers"
+                        android:textColor="#CA3A1D"
+                        android:textSize="25dp"
+                        android:gravity="left"
+                        android:paddingLeft="20dp"/>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:padding="30dp"
+                            android:src="@drawable/hammer_example"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textColor="#CCCCCC"
+                            android:textSize="20dp"
+                            android:layout_marginTop="30dp"
+                            android:text="The hammer can be used to reveal a 3x3 grid of tiles without any penalty."/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:padding="30dp"
+                            android:src="@drawable/widow_example"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textColor="#CCCCCC"
+                            android:textSize="20dp"
+                            android:layout_marginTop="50dp"
+                            android:text="The widow shields a stone or sensor automatically"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:padding="30dp"
+                            android:src="@drawable/skrull_example"/>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textColor="#CCCCCC"
+                            android:textSize="20dp"
+                            android:layout_marginTop="50dp"
+                            android:text="The skrull places a fake stone on the grid."/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#752515"
+                            android:gravity="center"
+                            android:text="Play Game"
+                            android:textColor="@android:color/white"
+                            android:onClick="play"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
